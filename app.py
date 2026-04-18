@@ -16,7 +16,7 @@ st.markdown("**European Banking | Data Science Internship Project**")
 # -----------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/churn_data.csv")
+    df = pd.read_csv("churn_data.csv")
     df.drop(columns=['Surname'], inplace=True)
 
     # Segmentation
